@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenyan Lifestyle | Wear the Culture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <nav class="site-nav">
-      <a href="index.html" class="nav-logo">KENYAN LIFESTYLE</a>
+      <a href="index.html" class="nav-logo">
+        <img
+          src="images/logo.png"
+          alt="Kenyan Lifestyle"
+          class="nav-logo-img">
+          <spanclass="nav-logo-text">KENYAN LIFESTYLE</span>   
+      </a>
 
       <button
         class="nav-toggle"
@@ -27,7 +39,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
-        li><a href="events.html">Events</a></li>
+        <li><a href="events.html">Events</a></li>
       </ul>
 
       <ul class="nav-right">
@@ -36,38 +48,63 @@
       </ul>
     </nav>
 
-    <footer class="site-footer">
+    <section class="carousel-section">
+      <div class="carousel" id="heroCarousel">
+        <div class="carousel-slide active"></div>
+        <div class="carousel-slide"></div>
+        <div class="carousel-slide"></div>
 
-    <div class="footer-col">
+        <button
+          class="carousel-btn prev"
+          id="prevBtn"
+          aria-label="Previous slide"
+        ></button>
+        <button
+          class="carousel-btn next"
+          id="nextBtn"
+          aria-label="Next slide"
+        ></button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <h1>Kenyan Lifestyle</h1>
+      <p>People come and go, Lifestyle stays forever.</p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-col">
         <p class="footer-heading">Kenyan Lifestyle</p>
         <p>Wear the culture.</p>
-    </div>
+      </div>
 
-    <div class="footer-col">
+      <div class="footer-col">
         <p class="footer-heading">Explore</p>
         <ul>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="footer-col">
+      <div class="footer-col">
         <p class="footer-heading">Contact</p>
         <ul>
-            <li><a href="contact.html">Get in touch</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">TikTok</a></li>
+          <li><a href="contact.html">Get in touch</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="footer-col">
+      <div class="footer-col">
         <p class="footer-heading">Legal</p>
         <ul>
-            <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
         </ul>
-    </div>
-
-</footer>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
