@@ -1,0 +1,61 @@
+.about-main {
+  margin-top: 74px;
+}
+
+.about-hero {
+  padding: 80px 40px;
+  background-color: #0c0c0c;
+  color: #fafaf8;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.about-hero p {
+  color: #8a8a8a;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.about-card {
+  padding: 60px 40px;
+  border-right: 0.5px solid #e8e6e1;
+}
+
+.about-card:last-child {
+  border-right: none;
+}
+
+.about-card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0c0c0c;
+}
+
+.about-card p {
+  color: #3a3a3a;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
