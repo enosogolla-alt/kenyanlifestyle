@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Service | Kenyan Lifestyle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-logo">
+        <img
+          src="images/logo.png"
+          alt="Kenyan Lifestyle"
+          class="nav-logo-img"
+        />
+        <span class="nav-logo-text">KENYAN LIFESTYLE</span>
+      </a>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="request.html" class="nav-cta">Request Services</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <main class="form-main">
+      <section class="form-hero">
+        <h1>Request a Service</h1>
+        <p>
+          Tell us what you need and we will get back to you within 24 hours.
+        </p>
+      </section>
+
+      <section class="form-container">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <form id="requestForm" novalidate>
+                <div class="mb-4">
+                  <label for="reqName" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="reqName"
+                    placeholder="John Doe"
+                  />
+                  <span class="error-msg" id="reqNameError"></span>
+                </div>
+
+                <div class="mb-4">
+                  <label for="reqEmail" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="reqEmail"
+                    placeholder="john@email.com"
+                  />
+                  <span class="error-msg" id="reqEmailError"></span>
+                </div>
+
+                <div class="mb-4">
+                  <label for="reqPhone" class="form-label">Phone Number</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="reqPhone"
+                    placeholder="+254 700 000 000"
+                  />
+                  <span class="error-msg" id="reqPhoneError"></span>
+                </div>
+
+                <div class="mb-4">
+                  <label for="reqService" class="form-label"
+                    >Service Type</label
+                  >
+                  <select class="form-select" id="reqService">
+                    <option value="">Select a service</option>
+                    <option value="design">Custom Design</option>
+                    <option value="printing">Printing</option>
+                    <option value="bulk">Bulk Order</option>
+                    <option value="fashion">New Fashion Line</option>
+                  </select>
+                  <span class="error-msg" id="reqServiceError"></span>
+                </div>
+
+                <div class="mb-4">
+                  <label for="reqMessage" class="form-label">Details</label>
+                  <textarea
+                    class="form-control"
+                    id="reqMessage"
+                    rows="5"
+                    placeholder="Describe your request..."
+                  ></textarea>
+                  <span class="error-msg" id="reqMessageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100">
+                  Submit Request
+                </button>
+                <p class="success-msg mt-3 text-center" id="reqSuccess"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-col">
+        <p class="footer-heading">Kenyan Lifestyle</p>
+        <p>Wear the culture.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Explore</p>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Contact</p>
+        <ul>
+          <li><a href="contact.html">Get in touch</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Legal</p>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/form-validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
