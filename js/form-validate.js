@@ -57,3 +57,41 @@ if (requestForm) {
     }
   });
 }
+
+// Login Form
+const loginForm = document.getElementById("loginForm");
+if (loginForm) {
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    let valid = true;
+
+    document
+      .querySelectorAll(".error-msg")
+      .forEach((el) => (el.textContent = ""));
+    document.getElementById("loginSuccess").textContent = "";
+
+    const email = document.getElementById("loginEmail").value.trim();
+    if (email === "") {
+      document.getElementById("loginEmailError").textContent =
+        "Email or phone is required.";
+      valid = false;
+    }
+
+    const password = document.getElementById("loginPassword").value.trim();
+    if (password === "") {
+      document.getElementById("loginPasswordError").textContent =
+        "Password is required.";
+      valid = false;
+    } else if (password.length < 6) {
+      document.getElementById("loginPasswordError").textContent =
+        "Password must be at least 6 characters.";
+      valid = false;
+    }
+
+    if (valid) {
+      document.getElementById("loginSuccess").textContent =
+        "Logged in successfully!";
+      loginForm.reset();
+    }
+  });
+}
