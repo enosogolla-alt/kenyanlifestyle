@@ -290,4 +290,46 @@ body {
   .carousel {
     height: 50vh;
   }
+
+  .products-mosaic {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .mosaic-card.tall,
+  .mosaic-card.wide {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .about-grid,
+  .services-grid,
+  .events-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-event {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-event-img {
+    height: 300px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info {
+    border-right: none;
+    border-bottom: 0.5px solid #e8e6e1;
+    padding-right: 0;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .contact-form {
+    padding-left: 0;
+  }
 }
