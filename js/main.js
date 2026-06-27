@@ -32,3 +32,22 @@ document.getElementById("nextBtn").addEventListener("click", nextSlide);
 document.getElementById("prevBtn").addEventListener("click", prevSlide);
 
 setInterval(nextSlide, 4000);
+
+// mobile nav toggle
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+
+if (navToggle) {
+  navToggle.addEventListener("click", function () {
+    if (navLinks.style.display === "flex") {
+      navLinks.style.display = "none";
+      this.setAttribute("aria-expanded", "false");
+    } else {
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "column";
+      navLinks.style.width = "100%";
+      navLinks.style.padding = "16px 0";
+      this.setAttribute("aria-expanded", "true");
+    }
+  });
+}
