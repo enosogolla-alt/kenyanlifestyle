@@ -81,3 +81,28 @@
   font-weight: 600;
   font-size: 14px;
 }
+
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.filter-btn {
+  background: none;
+  border: 1.5px solid #3a3a3a;
+  color: #3a3a3a;
+  padding: 8px 22px;
+  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #0c0c0c;
+  color: #fafaf8;
+  border-color: #0c0c0c;
+}
