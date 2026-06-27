@@ -54,6 +54,13 @@
         <input type="text" id="searchInput" placeholder="Search products..." />
       </div>
 
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="jersey">Jerseys</button>
+        <button class="filter-btn" data-filter="hoodie">Hoodies</button>
+        <button class="filter-btn" data-filter="shorts">Shorts</button>
+      </div>
+
       <div class="products-grid" id="productsGrid">
         <div class="product-card" data-category="jersey">
           <div class="product-img">
@@ -116,5 +123,6 @@
         </div>
       </div>
     </main>
+    <script src="js/products.js"></script>
   </body>
 </html>
