@@ -51,3 +51,17 @@ if (navToggle) {
     }
   });
 }
+
+// navbar scroll effect
+window.addEventListener("scroll", function () {
+  const nav = document.getElementById("siteNav");
+  if (nav) {
+    if (window.scrollY > 100) {
+      nav.style.backdropFilter = "blur(10px)";
+      nav.style.backgroundColor = "rgba(12, 12, 12, 0.95)";
+    } else {
+      nav.style.backdropFilter = "none";
+      nav.style.backgroundColor = "#0C0C0C";
+    }
+  }
+});
